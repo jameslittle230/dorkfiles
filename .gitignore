@@ -1,0 +1,12 @@
+*
+
+!.gitignore
+!.gitconfig
+!.vimrc
+!.vim/
+!.vim/*
+!.bash_profile
+!.bashrc
+!.tmux.conf
+!.hushlogin
+
