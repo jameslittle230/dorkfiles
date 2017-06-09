@@ -77,6 +77,7 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # In macOS, use `title 'my title'` to retitle a tab
 function title {
   printf "\e]1;%s\a" "$1"
+  echo -e "\033];$1\007"
 }
 
 alias sshorient="ssh orientweb@medved.bowdoin.edu"

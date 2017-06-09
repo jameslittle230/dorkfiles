@@ -9,4 +9,5 @@
 !.bashrc
 !.tmux.conf
 !.hushlogin
-
+!.brew
+!.cask
