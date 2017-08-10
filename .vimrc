@@ -6,6 +6,7 @@ Plug 'mattn/emmet-vim' "<ctrl>-y to expand the emmet statement
 Plug 'scrooloose/nerdcommenter' ",c<space> toggles the commented-ness of the current line
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " Status line content
@@ -88,6 +89,11 @@ set shiftwidth=4
 set wrap
 set linebreak
 
+autocmd FileType gitcommit highlight ColorColumn ctermbg=238
+autocmd FileType gitcommit set textwidth=72
+autocmd FileType gitcommit set colorcolumn=73
+autocmd FileType gitcommit set colorcolumn+=51
+
 " Pressing ,<space> should un-highlight my most recent search
 nmap <Leader><space> :nohlsearch <CR>
 
@@ -129,3 +135,9 @@ autocmd GUIEnter * set visualbell t_vb=
 " Remove trailing whitespace on save
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
+" Ctrl-P mappings
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" https://github.com/ctrlpvim/ctrlp.vim#basic-options
+let g:ctrlp_working_path_mode = 'ra'
