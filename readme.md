@@ -18,8 +18,9 @@ The steps below should also help you out:
 1. Install the XCode command line tools, which will give you Git, among other things.
 2. Install Homebrew and Homebrew Cask.
 3. Run `< .brew xargs brew install` and `< .cask xargs brew cask install` to install the software I use (Note: Haven't gotten around to testing these yet)
-4. I use vim-plug to manage my vim plugins. Install it and run the plugin installation process.
-5. In my Dropbox, there are other setup files for BetterTouchTool, Alfred, iTerm 3, among other things. Install all those in the right places.
+4. https://stackoverflow.com/questions/2411031/how-do-i-clone-into-a-non-empty-directory
+5. I use vim-plug to manage my vim plugins. Install it and run the plugin installation process.
+6. In my Dropbox, there are other setup files for BetterTouchTool, Alfred, iTerm 3, among other things. Install all those in the right places.
 
 ## Future work
 
