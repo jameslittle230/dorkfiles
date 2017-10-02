@@ -6,6 +6,8 @@
 !.vimrc
 !.vim/
 !.vim/*
+.vim/plugged
+.vim/autoload
 !.bash_profile
 !.bashrc
 !.tmux.conf

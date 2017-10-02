@@ -80,12 +80,11 @@ function title {
   echo -e "\033];$1\007"
 }
 
-alias sshorient="ssh orientweb@medved.bowdoin.edu"
-alias sshtest="ssh wordpress@104.236.205.61"
-alias sshstatic="ssh -p 25123 james@162.243.3.168"
-alias weather="curl -4 wttr.in"
-
 function mkg() {
   mkdir -p "$@" && cd $_
+}
+
+function cdl() {
+  cd "$@" && ls
 }
 

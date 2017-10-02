@@ -31,6 +31,9 @@ set showcmd
 hi StatusLine ctermfg=208 ctermbg=234
 hi StatusLineNC ctermfg=234 ctermbg=254
 
+autocmd! InsertEnter * hi StatusLine ctermfg=220 ctermbg=234
+autocmd! InsertLeave * hi StatusLine ctermfg=208 ctermbg=234
+
 " Backspace should work like other programs
 set backspace=indent,eol,start
 
