@@ -8,7 +8,7 @@ This git repository can live in the home directory.
 The .gitignore is set up in such a way that it will ignore everything except the specified files; in this way, it acts as a whitelist.
 To add new dotfiles, make sure to update the .gitignore file.
 
-This is designed for macOS Sierra.
+This is designed for macOS High Sierra.
 
 ## Setting up a new computer
 
