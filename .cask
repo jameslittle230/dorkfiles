@@ -1,11 +1,3 @@
-adobe-after-effects-cc
-adobe-creative-cloud
-adobe-illustrator-cc
-adobe-indesign-cc
-adobe-photoshop-cc
-adobe-photoshop-lightroom
-adobe-photoshop-lightroom600
-adobe-premiere-pro-cc
 alfred
 appcleaner
 backblaze
@@ -16,14 +8,12 @@ dash
 dropbox
 faviconographer
 firefox
-firefox-beta
-firefoxdeveloperedition
 google-chrome
-google-chrome-canary
 handbrake
 iterm2
 itsycal
 licecap
+mamp
 parallels-desktop
 pdfexpert
 sequel-pro
@@ -34,4 +24,6 @@ sublime-text
 transmission
 vagrant
 virtualbox
+visual-studio-code
 vlc
+adobe-creative-cloud

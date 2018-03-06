@@ -7,6 +7,7 @@ Plug 'scrooloose/nerdcommenter' ",c<space> toggles the commented-ness of the cur
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " Status line content
@@ -87,11 +88,13 @@ call matchadd('ColorColumn', '\%81v', 100)
 " sure if I want text to wrap or not. We'll see.
 set autoindent
 set smartindent
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set wrap
 set linebreak
 
+" Special stuff for git commit editing
 autocmd FileType gitcommit highlight ColorColumn ctermbg=238
 autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit set colorcolumn=73
@@ -114,9 +117,6 @@ imap jk <esc>
 " anything if set wrap isn't on)
 map j gj
 map k gk
-
-" remap : commands to ; commands because ; doesn't make you press shift
-nnoremap ; :
 
 " Remap tab and split commands
 nnoremap <Tab> :tabn<CR>
@@ -144,3 +144,8 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " https://github.com/ctrlpvim/ctrlp.vim#basic-options
 let g:ctrlp_working_path_mode = 'ra'
+
+" Open NERDTree automatically if you start up with $ vim
+" in a directory
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
