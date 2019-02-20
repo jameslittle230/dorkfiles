@@ -1,14 +1,17 @@
 " Packages managed with vim-plug; run :PlugInstall to install packages and get
 " Vim nicely set up
 call plug#begin()
-"Plug 'tpope/vim-sensible' "Sets some nice defaults. Check out the readme to see what they are.
-Plug 'mattn/emmet-vim' "<ctrl>-y to expand the emmet statement
-Plug 'scrooloose/nerdcommenter' ",c<space> toggles the commented-ness of the current line
+Plug 'mattn/emmet-vim'
+Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'easymotion/vim-easymotion'
+Plug 'toyamarinyon/vim-swift'
 call plug#end()
+
+" Pressing ,ev should open my vimrc for editing in a new tab.
+"<ctrl>-y to expand the emmet statement
+",c<space> toggles the commented-ness of the current line
 
 " Status line content
 set statusline=
@@ -48,17 +51,11 @@ hi EndOfBuffer ctermfg=238
 
 hi VertSplit ctermbg=0 ctermfg=234
 
-" hi comment cterm=italic
-" hi htmlArg cterm=italic
-
 " Tab bar colors
 hi TabLineFill ctermfg=0
 hi TabLine ctermbg=0
 hi TabLine ctermfg=254
 hi TabLineSel ctermfg=208
-
-" Set 265 colors -- not needed?
-" set t_CO=256
 
 " Set the leader key to comma instead of backslash
 let mapleader = ","
@@ -112,6 +109,9 @@ set incsearch
 " Pressing jk in rapid succession takes me out of insert mode. This is the
 " most helpful vim thing I've ever done.
 imap jk <esc>
+
+" Pressing pp in rapid succession should toggle paste
+nnoremap pp :pastetoggle<CR>
 
 " Let j and k work over long, wrapped lines of text (doesn't really do
 " anything if set wrap isn't on)

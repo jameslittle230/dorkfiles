@@ -10,8 +10,10 @@
 .vim/autoload
 !.bash_profile
 !.bashrc
+!.config/fish
 !.tmux.conf
 !.hushlogin
 !.brew
 !.cask
 !readme.md
+
