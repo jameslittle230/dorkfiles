@@ -4,4 +4,6 @@
 [core]
 	editor = vim
 [commit]
-	template = ~/.git-commit-template
+    template = ~/.git-commit-template
+[pull]
+	rebase = true
