@@ -3,15 +3,15 @@
 !.gitignore
 !.gitconfig
 !.git-commit-template
+!.zsh/
+!.zsh/*
+!.zshrc
 !.vimrc
 !.vim/
 !.vim/*
+.vim/plugged
 .vim/plugged/*
 .vim/autoload
-.vim/.netrwhist/*
-!.bash_profile
-!.bashrc
-!.config/fish
 !.tmux.conf
 !.hushlogin
 !.brew
@@ -19,3 +19,7 @@
 !readme.md
 !Brewfile
 !.jil-iterm2-profile.json
+
+!.bash_profile
+!.bashrc
+!.config/fish
