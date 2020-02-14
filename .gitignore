@@ -6,8 +6,9 @@
 !.vimrc
 !.vim/
 !.vim/*
-.vim/plugged
+.vim/plugged/*
 .vim/autoload
+.vim/.netrwhist/*
 !.bash_profile
 !.bashrc
 !.config/fish
@@ -17,4 +18,4 @@
 !.cask
 !readme.md
 !Brewfile
-
+!.jil-iterm2-profile.json

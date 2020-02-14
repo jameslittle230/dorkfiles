@@ -1,5 +1,11 @@
 " Packages managed with vim-plug; run :PlugInstall to install packages and get
 " Vim nicely set up
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin()
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdcommenter'

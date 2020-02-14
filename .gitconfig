@@ -1,6 +1,7 @@
 [user]
 	name = James Little
-	email = littleguy23@gmail.com
+    email = littleguy23@gmail.com
+    signingkey = C32CACEB5EC0465B4789536B67E4DF207FF33DDC
 [core]
 	editor = vim
 [commit]
