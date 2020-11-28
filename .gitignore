@@ -1,25 +1,31 @@
 *
 
+# Git config
 !.gitignore
 !.gitconfig
 !.git-commit-template
+
+# ZSH config
 !.zsh/
 !.zsh/*
 !.zshrc
+
+# Vim config
 !.vimrc
 !.vim/
 !.vim/*
-.vim/plugged
-.vim/plugged/*
-.vim/autoload
+/.vim/plugged
+/.vim/plugged/*
+/.vim/plugged/*/*
+/.vim/autoload
+
+# Other command line
 !.tmux.conf
 !.hushlogin
-!.brew
-!.cask
-!readme.md
 !Brewfile
+
+# Other config
 !.jil-iterm2-profile.json
 
-!.bash_profile
-!.bashrc
-!.config/fish
+# Github repository
+!readme.md
