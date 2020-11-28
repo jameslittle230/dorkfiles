@@ -26,6 +26,8 @@
 
 # Other config
 !.jil-iterm2-profile.json
+!.alfred
+!.alfred/*
 
 # Github repository
 !readme.md
