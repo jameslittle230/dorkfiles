@@ -1,10 +1,16 @@
 [user]
-	name = James Little
+    name = James Little
     email = littleguy23@gmail.com
-    signingkey = C32CACEB5EC0465B4789536B67E4DF207FF33DDC
 [core]
-	editor = vim
+    editor = vim
+    preloadindex = true
 [commit]
     template = ~/.git-commit-template
 [pull]
+    ff = only
 	rebase = true
+[push]
+    default = current
+[alias]
+    wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+    lines = log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short
