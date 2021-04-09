@@ -14,10 +14,10 @@
 !.vimrc
 !.vim/
 !.vim/*
-/.vim/plugged
-/.vim/plugged/*
-/.vim/plugged/*/*
-/.vim/autoload
+.vim/plugged
+.vim/plugged/*
+.vim/plugged/*/*
+.vim/autoload
 
 # Other command line
 !.tmux.conf

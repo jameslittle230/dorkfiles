@@ -12,5 +12,15 @@
 [push]
     default = current
 [alias]
+    c = commit
+    s = status
+    co = checkout
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
     lines = log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short
+[merge]
+    tool = vim -d
+[diff]
+	algorithm = patience
+	compactionHeuristic = true
+[help]
+	autocorrect = 1

@@ -6,18 +6,21 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Can't have comments in the plug section, I guess
 call plug#begin()
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'airblade/vim-rooter'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim',
+Plug 'cespare/vim-toml'
+Plug 'stephpy/vim-yaml'
+Plug 'rust-lang/rust.vim'
 Plug 'toyamarinyon/vim-swift'
 call plug#end()
-
-" Pressing ,ev should open my vimrc for editing in a new tab.
-"<ctrl>-y to expand the emmet statement
-",c<space> toggles the commented-ness of the current line
 
 " Status line content
 set statusline=
@@ -48,8 +51,8 @@ autocmd! InsertLeave * hi StatusLine ctermfg=208 ctermbg=234
 set backspace=indent,eol,start
 
 " Set line numbers
-set relativenumber
-set number
+autocmd! InsertEnter * set relativenumber number
+autocmd! InsertLeave * set relativenumber number
 highlight LineNr ctermfg=238 "line numbers are super dark gray
 
 " Color for the tildes after the end of the buffer
@@ -87,6 +90,10 @@ set mat=2
 highlight ColorColumn ctermbg=red ctermfg=white
 call matchadd('ColorColumn', '\%81v', 100)
 
+" Permanent undo
+set undodir=~/.vimdid
+set undofile
+
 " Auto indent, smart indent. I've commented out wrapping text because I'm not
 " sure if I want text to wrap or not. We'll see.
 set autoindent
@@ -96,6 +103,13 @@ set tabstop=4
 set shiftwidth=4
 set wrap
 set linebreak
+
+" Wrapping options
+set formatoptions=tc " wrap text and comments using textwidth
+set formatoptions+=r " continue comments when pressing ENTER in I mode
+set formatoptions+=q " enable formatting of comments with gq
+set formatoptions+=n " detect lists for formatting
+set formatoptions+=b " auto-wrap in insert mode, and do not wrap old long lines
 
 " Special stuff for git commit editing
 autocmd FileType gitcommit highlight ColorColumn ctermbg=238
@@ -112,12 +126,13 @@ set ignorecase
 set smartcase
 set incsearch
 
+" Make operations like yank, delete and paste work with the macOS
+" clipboard
+set clipboard=unnamed
+
 " Pressing jk in rapid succession takes me out of insert mode. This is the
 " most helpful vim thing I've ever done.
 imap jk <esc>
-
-" Pressing pp in rapid succession should toggle paste
-nnoremap pp :pastetoggle<CR>
 
 " Let j and k work over long, wrapped lines of text (doesn't really do
 " anything if set wrap isn't on)
@@ -155,3 +170,15 @@ let g:ctrlp_working_path_mode = 'ra'
 " in a directory
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Automatically toggle paste if we're pasting from the clipboard
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
