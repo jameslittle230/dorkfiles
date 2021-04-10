@@ -31,3 +31,6 @@
 
 # Github repository
 !readme.md
+
+# Scripts for Swiftbar, etc
+!scripts/*

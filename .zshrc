@@ -1,4 +1,3 @@
-
 # Pure Prompt
 # https://github.com/sindresorhus/pure
 fpath+=$HOME/.zsh/pure
@@ -12,6 +11,13 @@ source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Global history
 setopt inc_append_history
 setopt share_history
+
+# Automatically list directory contents on `cd`.
+auto-ls () {
+	emulate -L zsh;
+    ls
+}
+chpwd_functions=( auto-ls $chpwd_functions )
 
 [ ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
 [ ~/.zsh/aliases.zsh ] && source ~/.zsh/aliases.zsh
