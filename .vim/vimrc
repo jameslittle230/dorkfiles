@@ -10,7 +10,6 @@ endif
 call plug#begin()
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -54,8 +53,7 @@ autocmd! InsertLeave * hi StatusLine ctermfg=208 ctermbg=234
 set backspace=indent,eol,start
 
 " Set line numbers
-autocmd! InsertEnter * set relativenumber number
-autocmd! InsertLeave * set relativenumber number
+set relativenumber number
 highlight LineNr ctermfg=238 "line numbers are super dark gray
 
 " Color for the tildes after the end of the buffer
@@ -174,11 +172,6 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " https://github.com/ctrlpvim/ctrlp.vim#basic-options
 let g:ctrlp_working_path_mode = 'ra'
-
-" Open NERDTree automatically if you start up with $ vim
-" in a directory
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Automatically toggle paste if we're pasting from the clipboard
 let &t_SI .= "\<Esc>[?2004h"

@@ -8,7 +8,7 @@ alias gap='git add -p'
 
 alias gpristine='git reset --hard && git clean -dffx'
 alias gcom='git checkout $(git_main_branch)'
-alias gco='git checkout'
+#alias gco='git checkout'
 
 alias gb='git branch'
 alias gbd='git branch -d'

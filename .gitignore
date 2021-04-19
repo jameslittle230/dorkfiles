@@ -34,3 +34,7 @@
 
 # Scripts for Swiftbar, etc
 !scripts/*
+local.zsh
+/.vim/.netrwhist
+/.vim/plugged
+/.vim/plugged/vim-yaml

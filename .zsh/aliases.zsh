@@ -5,7 +5,7 @@ function mkg() {
 }
 
 function gco() {
-    git checkout “$(git branch — all | fzf| tr -d ‘[:space:]’)”
+    git checkout "$(git branch --all | fzf | tr -d '[:space:]')"
 }
 
 alias ls="exa -hl --git"

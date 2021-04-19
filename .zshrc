@@ -18,12 +18,15 @@ autoload -Uz compinit && compinit
 # Global history
 setopt inc_append_history
 setopt share_history
+
+# Automatically ls when cd-ing
 auto-ls () {
 	emulate -L zsh;
     ls
 }
 chpwd_functions=( auto-ls $chpwd_functions )
 
+[ ~/.zsh/git.plugin.zsh ] && source ~/.zsh/git.plugin.zsh
 [ ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
 [ ~/.zsh/aliases.zsh ] && source ~/.zsh/aliases.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
