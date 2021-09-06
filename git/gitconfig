@@ -1,0 +1,62 @@
+[core]
+    editor = nvim
+    preloadindex = true
+    excludesfile = ~/.gitignore
+
+[commit]
+    template = ~/.git-commit-template
+
+[pull]
+    ff = only
+	rebase = true
+
+[push]
+    default = current
+
+[alias]
+    a = add
+    amend = commit --amend
+    b = branch -v
+    c = commit -m
+    ca = commit -am
+    co = checkout
+    nb = checkout -b
+    rc = rebase --continue
+    rs = rebase --skip
+    r = remote -v
+    s = status
+    stack = commit --allow-empty -m "##### STACKPOINT #####"
+    wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+    lines = log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short -n 20
+    alllines = log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short
+
+[mergetool]
+    prompt = false
+
+[merge]
+    summary = true
+    verbosity = 1
+    tool = vim -d
+
+[apply]
+    whitespace = nowarn
+
+[diff]
+    mnemonicprefix = true
+	algorithm = patience
+    compactionHeuristic = true
+
+[rerere]
+    enabled = true
+
+[help]
+    autocorrect = 1
+
+[advice]
+    statusHints = false
+
+[interactive]
+  singlekey = true
+
+[include]
+    path = .gitconfig.user

@@ -1,0 +1,30 @@
+source $HOME/.zsh/vendor/antigen.zsh
+
+antigen bundle mafredri/zsh-async # pure prereq
+antigen bundle chabou/pure-now
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions
+antigen bundle dbalatero/fzf-git
+antigen bundle DarrinTisdale/zsh-aliases-exa
+antigen bundle zdharma/fast-syntax-highlighting
+
+antigen apply
+
+autoload -Uz compinit && compinit
+
+# Global history
+setopt inc_append_history
+setopt share_history
+
+for file in $HOME/.zsh/custom/**/*.zsh
+do
+  source $file
+done
+
+[ -f ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
+[ -f ~/.zsh/local.zsh ] && source ~/.zsh/local.zsh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

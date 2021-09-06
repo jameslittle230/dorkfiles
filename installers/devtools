@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+source "${BASH_SOURCE%/*}/shared.sh"
+
+require_installer package-manager
+
+dotheader "Setting up devtools..."
+
+brew_install fd
+
+brew_install coreutils
+
+brew_install the_silver_searcher
+
+brew_install ripgrep
+
+install_package sl
+install_package wget
+
+brew_install ack
+
+brew_install hub
+brew_install gh

@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.thoughtasylum.conductor</string>
+	<key>connections</key>
+	<dict>
+		<key>337F3F39-F1A1-40C2-A787-610D6C75FCDB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6C3709F7-7B5D-41D7-B717-3AC7CDE53A87</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>645DF2BC-F324-4288-9ACD-E35D90EAAC7E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69B66AD6-BF3C-425F-A7C2-CCD54DB74FD9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>447F6104-7936-4D7A-802A-A65E5A43F6E0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6B552F12-2DE6-4C86-9110-8F63E7BBBD67</key>
+		<array/>
+		<key>6C3709F7-7B5D-41D7-B717-3AC7CDE53A87</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69B66AD6-BF3C-425F-A7C2-CCD54DB74FD9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6EB33DFE-81B8-47B1-91B5-D0579516C6FB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69B66AD6-BF3C-425F-A7C2-CCD54DB74FD9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>77F5E8AD-981C-4A1A-AF38-29547F9B30A2</key>
+		<array/>
+		<key>7D5DAA4A-D89E-4564-AEC2-3ACEAB7619E6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6C3709F7-7B5D-41D7-B717-3AC7CDE53A87</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>99D26491-BC96-4816-8397-5E72D6D40D1A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6EB33DFE-81B8-47B1-91B5-D0579516C6FB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A4054B3E-75C6-4DD5-A490-CB8E2A0393E1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>645DF2BC-F324-4288-9ACD-E35D90EAAC7E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>95BCAC69-5465-4117-82BF-0208F0ACF2A0</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1CA1FC1B-262E-49E5-A751-1D3843A4768F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>30B28D36-E160-4860-8136-E9D196F18D1E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A70CC455-0313-4703-92DB-F12FBE3698A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B552F12-2DE6-4C86-9110-8F63E7BBBD67</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B3F2B888-E6E8-4699-BF9B-362EE816E28A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B3F2B888-E6E8-4699-BF9B-362EE816E28A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DC93FEE1-160E-4327-8773-CA7912C7FA81</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B7B26E56-032A-4B18-BF6D-93E33E7065F6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6EB33DFE-81B8-47B1-91B5-D0579516C6FB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D0B56985-283D-4EF1-87C2-AD2E0516A441</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A4054B3E-75C6-4DD5-A490-CB8E2A0393E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E0421DE4-E17F-457E-9F92-67088AFBD518</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DC93FEE1-160E-4327-8773-CA7912C7FA81</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>77F5E8AD-981C-4A1A-AF38-29547F9B30A2</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Edit macro in Keyboard Maestro</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F9B8BD3C-4DC2-48EC-9C85-EFD7E5C3B777</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy macro name to clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>ECF85277-E62D-44B9-A431-22E7C029B1FF</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Copy macro trigger URL to clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>ECF85277-E62D-44B9-A431-22E7C029B1FF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69B66AD6-BF3C-425F-A7C2-CCD54DB74FD9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F9B8BD3C-4DC2-48EC-9C85-EFD7E5C3B777</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69B66AD6-BF3C-425F-A7C2-CCD54DB74FD9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Stephen Millard</string>
+	<key>description</key>
+	<string>A Keyboard Maestro workflow for Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Conductor</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Pop</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>6B552F12-2DE6-4C86-9110-8F63E7BBBD67</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>kmtrigger://macro={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>DC93FEE1-160E-4327-8773-CA7912C7FA81</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>#km</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching latest Keyboard Maestro macros</string>
+				<key>script</key>
+				<string>import sys
+
+#query = sys.argv[1]
+
+#sys.stdout.write(query)
+
+from os.path import expanduser
+import plistlib
+import json
+
+strPathKM = expanduser("~") + "/Library/Application Support/Keyboard Maestro/Keyboard Maestro Macros.plist"
+
+objOutput = { "items" : [] }
+
+with open(strPathKM, "rb") as fp:
+	pl = plistlib.load(fp)
+	
+	for objGroup in pl["MacroGroups"]:
+		if "Macros" in objGroup:
+			#print("Macros in: " + objGroup["Name"])
+			for objMacro in objGroup["Macros"]:
+				if "Name" in objMacro:
+					#print(objMacro["Name"] + "," + objMacro["UID"])
+					objItem = {}
+					objItem['title'] = objMacro["Name"]
+					objItem['subtitle'] = objMacro["UID"]
+					objItem['arg'] = objMacro["UID"]
+					objOutput["items"].append(objItem)
+
+sys.stdout.write(json.dumps(objOutput))</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>km_me.py</string>
+				<key>subtext</key>
+				<string>Trigger Keyboard Maestro Macro with {var:delay} second delay</string>
+				<key>title</key>
+				<string>Keyboard Maestro (Active Macros) Delayed Trigger</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A70CC455-0313-4703-92DB-F12FBE3698A3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>{var:delay}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>B3F2B888-E6E8-4699-BF9B-362EE816E28A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>km</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching latest Keyboard Maestro macros</string>
+				<key>script</key>
+				<string>import sys
+
+#query = sys.argv[1]
+
+#sys.stdout.write(query)
+
+from os.path import expanduser
+import plistlib
+import json
+
+strPathKM = expanduser("~") + "/Library/Application Support/Keyboard Maestro/Keyboard Maestro Macros.plist"
+
+objOutput = { "items" : [] }
+
+with open(strPathKM, "rb") as fp:
+	pl = plistlib.load(fp)
+	
+	for objGroup in pl["MacroGroups"]:
+		if "Macros" in objGroup:
+			#print("Macros in: " + objGroup["Name"])
+			for objMacro in objGroup["Macros"]:
+				if "Name" in objMacro:
+					#print(objMacro["Name"] + "," + objMacro["UID"])
+					objItem = {}
+					objItem['title'] = objMacro["Name"]
+					objItem['subtitle'] = objMacro["UID"]
+					objItem['arg'] = objMacro["UID"]
+					objOutput["items"].append(objItem)
+
+sys.stdout.write(json.dumps(objOutput))</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>km_me.py</string>
+				<key>subtext</key>
+				<string>Trigger Keyboard Maestro Macro</string>
+				<key>title</key>
+				<string>Keyboard Maestro (Active Macros)</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E0421DE4-E17F-457E-9F92-67088AFBD518</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Keyboard Maestro"
+	editMacro "{query}"
+	activate
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>77F5E8AD-981C-4A1A-AF38-29547F9B30A2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Keyboard Maestro"	set the clipboard to (name of macros whose id is "{query}") as textend tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F9B8BD3C-4DC2-48EC-9C85-EFD7E5C3B777</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>kmtrigger://macro={query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>ECF85277-E62D-44B9-A431-22E7C029B1FF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>.kmge</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching latest Keyboard Maestro macro groups</string>
+				<key>script</key>
+				<string>import sys
+
+#query = sys.argv[1]
+
+#sys.stdout.write(query)
+
+from os.path import expanduser
+import plistlib
+import json
+
+strPathKM = expanduser("~") + "/Library/Application Support/Keyboard Maestro/Keyboard Maestro Macros.plist"
+
+objOutput = { "items" : [] }
+
+with open(strPathKM, "rb") as fp:
+	pl = plistlib.load(fp)
+	
+	for objGroup in pl["MacroGroups"]:
+		if "Macros" in objGroup:
+			#print("Macros in: " + objGroup["Name"])
+			for objMacro in objGroup["Macros"]:
+				if "Name" in objMacro:
+					#print(objMacro["Name"] + "," + objMacro["UID"])
+					objItem = {}
+					objItem['title'] = objMacro["Name"]
+					objItem['subtitle'] = objMacro["UID"]
+					objItem['arg'] = objMacro["UID"]
+					objOutput["items"].append(objItem)
+
+sys.stdout.write(json.dumps(objOutput))</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>km_ge.py</string>
+				<key>subtext</key>
+				<string>Enable a disabled Keyboard Maestro macro group</string>
+				<key>title</key>
+				<string>Keyboard Maestro (Enable Disabled Group)</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>99D26491-BC96-4816-8397-5E72D6D40D1A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Keyboard Maestro"
+	setMacroEnable "{query}" with enable
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6EB33DFE-81B8-47B1-91B5-D0579516C6FB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Tink</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>69B66AD6-BF3C-425F-A7C2-CCD54DB74FD9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>.kmme</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching latest Keyboard Maestro macros</string>
+				<key>script</key>
+				<string>import sys
+
+#query = sys.argv[1]
+
+#sys.stdout.write(query)
+
+from os.path import expanduser
+import plistlib
+import json
+
+strPathKM = expanduser("~") + "/Library/Application Support/Keyboard Maestro/Keyboard Maestro Macros.plist"
+
+objOutput = { "items" : [] }
+
+with open(strPathKM, "rb") as fp:
+	pl = plistlib.load(fp)
+	
+	for objGroup in pl["MacroGroups"]:
+		if "Macros" in objGroup:
+			#print("Macros in: " + objGroup["Name"])
+			for objMacro in objGroup["Macros"]:
+				if "Name" in objMacro:
+					#print(objMacro["Name"] + "," + objMacro["UID"])
+					objItem = {}
+					objItem['title'] = objMacro["Name"]
+					objItem['subtitle'] = objMacro["UID"]
+					objItem['arg'] = objMacro["UID"]
+					objOutput["items"].append(objItem)
+
+sys.stdout.write(json.dumps(objOutput))</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>km_md.py</string>
+				<key>subtext</key>
+				<string>Enable a disabled Keyboard Maestro macro</string>
+				<key>title</key>
+				<string>Keyboard Maestro (Enable Disabled Macro)</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B7B26E56-032A-4B18-BF6D-93E33E7065F6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>.kmgd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching latest Keyboard Maestro macro groups</string>
+				<key>script</key>
+				<string>import sys
+
+#query = sys.argv[1]
+
+#sys.stdout.write(query)
+
+from os.path import expanduser
+import plistlib
+import json
+
+strPathKM = expanduser("~") + "/Library/Application Support/Keyboard Maestro/Keyboard Maestro Macros.plist"
+
+objOutput = { "items" : [] }
+
+with open(strPathKM, "rb") as fp:
+	pl = plistlib.load(fp)
+	
+	for objGroup in pl["MacroGroups"]:
+		if "Macros" in objGroup:
+			#print("Macros in: " + objGroup["Name"])
+			for objMacro in objGroup["Macros"]:
+				if "Name" in objMacro:
+					#print(objMacro["Name"] + "," + objMacro["UID"])
+					objItem = {}
+					objItem['title'] = objMacro["Name"]
+					objItem['subtitle'] = objMacro["UID"]
+					objItem['arg'] = objMacro["UID"]
+					objOutput["items"].append(objItem)
+
+sys.stdout.write(json.dumps(objOutput))</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>km_gd.py</string>
+				<key>subtext</key>
+				<string>Disable an Enabled Keyboard Maestro macro group</string>
+				<key>title</key>
+				<string>Keyboard Maestro (Disable Enabled Group)</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7D5DAA4A-D89E-4564-AEC2-3ACEAB7619E6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Keyboard Maestro"
+	setMacroEnable "{query}" without enable
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6C3709F7-7B5D-41D7-B717-3AC7CDE53A87</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>.kmmd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching latest Keyboard Maestro macro</string>
+				<key>script</key>
+				<string>import sys
+
+#query = sys.argv[1]
+
+#sys.stdout.write(query)
+
+from os.path import expanduser
+import plistlib
+import json
+
+strPathKM = expanduser("~") + "/Library/Application Support/Keyboard Maestro/Keyboard Maestro Macros.plist"
+
+objOutput = { "items" : [] }
+
+with open(strPathKM, "rb") as fp:
+	pl = plistlib.load(fp)
+	
+	for objGroup in pl["MacroGroups"]:
+		if "Macros" in objGroup:
+			#print("Macros in: " + objGroup["Name"])
+			for objMacro in objGroup["Macros"]:
+				if "Name" in objMacro:
+					#print(objMacro["Name"] + "," + objMacro["UID"])
+					objItem = {}
+					objItem['title'] = objMacro["Name"]
+					objItem['subtitle'] = objMacro["UID"]
+					objItem['arg'] = objMacro["UID"]
+					objOutput["items"].append(objItem)
+
+sys.stdout.write(json.dumps(objOutput))</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>km_me.py</string>
+				<key>subtext</key>
+				<string>Disable an Enabled Keyboard Maestro macro</string>
+				<key>title</key>
+				<string>Keyboard Maestro (Disable Enabled Macro)</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>337F3F39-F1A1-40C2-A787-610D6C75FCDB</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Delay now set as {var:delay} seconds</string>
+				<key>title</key>
+				<string>Delay Updated</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>447F6104-7936-4D7A-802A-A65E5A43F6E0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+function run(argv)
+{
+	//Set the 'delay' variable
+	Application('com.runningwithcrayons.Alfred').setConfiguration('delay', 
+		{
+			toValue: argv.join(" "),
+			inWorkflow: $.getenv('alfred_workflow_bundleid'),
+			exportable: true
+		});
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>645DF2BC-F324-4288-9ACD-E35D90EAAC7E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>;km</string>
+				<key>subtext</key>
+				<string>Current value is {var:delay}</string>
+				<key>text</key>
+				<string>Set conductor delay option in seconds</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D0B56985-283D-4EF1-87C2-AD2E0516A441</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>"{query}" is not a positive integer</string>
+				<key>title</key>
+				<string>Invalid Delay Specified</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1CA1FC1B-262E-49E5-A751-1D3843A4768F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^\d+$</string>
+						<key>outputlabel</key>
+						<string>integer</string>
+						<key>uid</key>
+						<string>95BCAC69-5465-4117-82BF-0208F0ACF2A0</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>non-integer</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>A4054B3E-75C6-4DD5-A490-CB8E2A0393E1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Funk</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>30B28D36-E160-4860-8136-E9D196F18D1E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Keyboard Maestro is a third party utility that allows you to build and run macro-based automations to interact with other applications and the operating system. It provides an Automator-like user interface with a large array of triggers and actions, and with support for triggering scripts and targeting actions on user interface elements (e.g. buttons and menus).
+
+Conductor is a workflow for interacting with Keyboard Maestro and specifically for working with macros. It utilises seven different trigger keywords that allow you to carry out various actions.
+
+km {macro name}
+---------------
+A script filter to execute a macro by name. Type in "km" and a list of active macros will be displayed in alphabetical order. Beneath each macro name listed, you can also see what macro group it belongs to and it's unique ID.  Continue typing to filter the list and use the usual Alfred navigation options to select the macro you wish to trigger.
+
+As well as executing a macro, you can instead opt to edit a macro by holding down the "alt/option" key when selecting, to copy the macro's name to the clipboard by holding down the "cmd" key when selecting, or to copy the macro trigger URL to the clipboard by holding down the "ctrl" key when selecting.
+
+;km {delay in seconds}
+----------------------
+When the workflow is installed, you can set a variable called "delay". This variable is used by the "#km " keyword call to trigger a macro after a specified number of seconds delay.  Using ";km" you can specify a positive integer value for the number of seconds delay without having to open and modify the variable inside the Alfred workflow. Effectively it is a quick access approach.
+
+Note that the current value of the delay is shown in the subtext for the action when you enter the keyword. 
+
+.kmge {macro group name}
+------------------------
+Enable a disabled macro group by name.
+
+.kmgd {macro group name}
+------------------------
+Disable an enabled macro group by name.
+
+.kmme {macro name}
+------------------
+Enable a disabled macro by name.
+
+.kmmd {macro name}
+------------------
+Disable an enabled macro by name.</string>
+	<key>uidata</key>
+	<dict>
+		<key>1CA1FC1B-262E-49E5-A751-1D3843A4768F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>745</integer>
+			<key>ypos</key>
+			<integer>1075</integer>
+		</dict>
+		<key>30B28D36-E160-4860-8136-E9D196F18D1E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>750</integer>
+			<key>ypos</key>
+			<integer>1200</integer>
+		</dict>
+		<key>337F3F39-F1A1-40C2-A787-610D6C75FCDB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>930</integer>
+		</dict>
+		<key>447F6104-7936-4D7A-802A-A65E5A43F6E0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>745</integer>
+			<key>ypos</key>
+			<integer>930</integer>
+		</dict>
+		<key>645DF2BC-F324-4288-9ACD-E35D90EAAC7E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>930</integer>
+		</dict>
+		<key>69B66AD6-BF3C-425F-A7C2-CCD54DB74FD9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>745</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
+		<key>6B552F12-2DE6-4C86-9110-8F63E7BBBD67</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>6C3709F7-7B5D-41D7-B717-3AC7CDE53A87</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>865</integer>
+		</dict>
+		<key>6EB33DFE-81B8-47B1-91B5-D0579516C6FB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
+		<key>77F5E8AD-981C-4A1A-AF38-29547F9B30A2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>235</integer>
+		</dict>
+		<key>7D5DAA4A-D89E-4564-AEC2-3ACEAB7619E6</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>800</integer>
+		</dict>
+		<key>99D26491-BC96-4816-8397-5E72D6D40D1A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>545</integer>
+		</dict>
+		<key>A4054B3E-75C6-4DD5-A490-CB8E2A0393E1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>275</integer>
+			<key>ypos</key>
+			<integer>1080</integer>
+		</dict>
+		<key>A70CC455-0313-4703-92DB-F12FBE3698A3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>110</integer>
+		</dict>
+		<key>B3F2B888-E6E8-4699-BF9B-362EE816E28A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+		<key>B7B26E56-032A-4B18-BF6D-93E33E7065F6</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>670</integer>
+		</dict>
+		<key>D0B56985-283D-4EF1-87C2-AD2E0516A441</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>1060</integer>
+		</dict>
+		<key>DC93FEE1-160E-4327-8773-CA7912C7FA81</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>110</integer>
+		</dict>
+		<key>E0421DE4-E17F-457E-9F92-67088AFBD518</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>235</integer>
+		</dict>
+		<key>ECF85277-E62D-44B9-A431-22E7C029B1FF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>495</integer>
+		</dict>
+		<key>F9B8BD3C-4DC2-48EC-9C85-EFD7E5C3B777</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>365</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>delay</key>
+		<string>1</string>
+	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>thoughtasylum.com</string>
+</dict>
+</plist>

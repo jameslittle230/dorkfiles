@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+source "${BASH_SOURCE%/*}/shared.sh"
+
+require_installer package-manager
+
+function install_rust() {
+  if ! command_exists "cargo" ; then
+    brew_install rustup
+    rustup-init -y
+    source $HOME/.cargo/env
+  fi
+}
+
+dotheader "Setting up Rust..."
+
+install_rust
