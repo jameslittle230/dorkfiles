@@ -12,9 +12,12 @@ end
 
 hyperKey:bind('h'):toFunction('Reload Hammerspoon', function()
   hs.application.launchOrFocus("Hammerspoon")
+  hs.notify.show("Hammerspoon", "Configuration reloaded!", "")
   hs.reload()
 end)
 
+require "countdown"
+require "gh-stars"
 require "window-management"
 require "window-hotkeys"
 require "ocr-paste"
