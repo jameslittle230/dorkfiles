@@ -70,7 +70,7 @@ end
 -- Throws a window 1 screen to the left
 module.throw = function ()
   local meta = windowMeta()
-  meta.window:centerOnScreen(meta.screen.next())
+  meta.window:centerOnScreen(meta.screen:next())
 end
 
 -- 1. Moves a window all the way left
