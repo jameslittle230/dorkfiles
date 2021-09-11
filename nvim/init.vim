@@ -166,29 +166,10 @@ inoremap <C-Z> <Esc><C-Z>
 nnoremap / /\v
 vnoremap / /\v
 
-" Remove arrow keys in Insert Mode
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-inoremap <Up> <Nop>
-
-" Remove arrow keys in Normal Mode
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-nnoremap <Up> <Nop>
-
-" Remove arrow keys in Visual Mode
-vnoremap <Down> <Nop>
-vnoremap <Left> <Nop>
-vnoremap <Right> <Nop>
-vnoremap <Up> <Nop>
-
 " ================ Plugins ==========================
 
 call plug#begin('~/.local/nvim/plugins')
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'airblade/vim-gitgutter'
 Plug 'nvim-lua/plenary.nvim'          " useful Lua functions, e.g. like boost
 
 Plug 'mattn/emmet-vim'
@@ -201,7 +182,7 @@ Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'rust-lang/rust.vim'
 Plug 'toyamarinyon/vim-swift'
-
+Plug 'preservim/nerdtree'
 Plug 'AndrewRadev/splitjoin.vim'      " split/join single line/multiline
 
 
@@ -219,13 +200,6 @@ Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}  " markdown preview with :Glow
 
 " Theming
 Plug 'chrisbra/Colorizer'            " show hex colors in CSS/HTML files
-Plug 'glepnir/galaxyline.nvim'       " fast Lua statusline
-Plug 'kyazdani42/nvim-web-devicons'  " fancy icons
-Plug 'RRethy/vim-illuminate'         " highlight duplicate words
-Plug 'drzel/vim-line-no-indicator'   " nice scroll indicator" Theming
-Plug 'chrisbra/Colorizer'            " show hex colors in CSS/HTML files
-Plug 'glepnir/galaxyline.nvim'       " fast Lua statusline
-Plug 'kyazdani42/nvim-web-devicons'  " fancy icons
 Plug 'RRethy/vim-illuminate'         " highlight duplicate words
 Plug 'drzel/vim-line-no-indicator'   " nice scroll indicator
 
@@ -236,3 +210,13 @@ Plug 'airblade/vim-gitgutter'   " show changed line marks in gutter
 Plug 'tpope/vim-rhubarb'        " enable GHE/Github links with :Gbrowse
 Plug 'TimUntersberger/neogit'
 call plug#end()
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+
