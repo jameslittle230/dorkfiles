@@ -9,4 +9,8 @@ function gco() {
 }
 
 alias ls="exa -hl --git"
+alias lal="ls -al"
 alias vim="nvim"
+alias c..="cd .."
+alias c...="cd ../.."
+alias c....="cd ../../../"
