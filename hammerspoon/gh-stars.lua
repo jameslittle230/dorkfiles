@@ -18,6 +18,7 @@ update = function()
 end
 
 addMenu = function(menu)
+
   menu:setMenu({
     {
       title = "Open Stork",
