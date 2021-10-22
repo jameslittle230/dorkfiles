@@ -29,6 +29,6 @@ updateMenu = function()
 end
 
 updateMenu()
-hs.timer.doEvery(hs.timer.hours(6), function()
+Countdown.timer = hs.timer.doEvery(hs.timer.hours(6), function()
   updateMenu()
 end)
