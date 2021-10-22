@@ -6,18 +6,7 @@ hs.grid.setMargins('0, 0')
 local function setGridForScreens()
   -- Set screen grid depending on resolution
   for _, screen in pairs(hs.screen.allScreens()) do
-    if screen:frame().w / screen:frame().h > 2 then
-      -- 10 * 4 for ultra wide screen
-      hs.grid.setGrid('10 * 4', screen)
-    else
-      if screen:frame().w < screen:frame().h then
-        -- 4 * 8 for vertically aligned screen
-        hs.grid.setGrid('4 * 8', screen)
-      else
-        -- 8 * 4 for normal screen
-        hs.grid.setGrid('8 * 4', screen)
-      end
-    end
+    hs.grid.setGrid('12 * 12', screen)
   end
 end
 
@@ -49,6 +38,25 @@ end
 
 local module = {}
 
+-- Given a list of grid cells, this function will resize the given window
+-- between them in order. If the window's size isn't listed, it'll set the
+-- window to the first index.
+module.rotateBetweenCells = function (meta, cells)
+  local len = #cells
+  for index, value in ipairs(cells) do
+    if meta.windowGrid == value then
+      if index == len then
+        hs.grid.set(meta.window, cells[1])
+      else
+        hs.grid.set(meta.window, cells[index + 1])
+      end
+      return
+    end
+  end
+  
+  hs.grid.set(meta.window, cells[1])
+end
+
 -- Maximizes a window to fit the entire grid.
 module.maximizeWindow = function ()
   local meta = windowMeta()
@@ -77,72 +85,117 @@ end
 -- 2. Resizes it to take up the left half of the screen (grid)
 module.leftHalf = function ()
   local meta = windowMeta()
-  local cell = hs.geometry(0, 0, 0.5 * meta.screenGrid.w, meta.screenGrid.h)
+  local cells = {
+    hs.geometry(0, 0, 6, 12),
+    hs.geometry(0, 0, 4, 12),
+    hs.geometry(0, 0, 8, 12),
+  }
 
-  hs.grid.set(meta.window, cell, meta.screen)
+  module.rotateBetweenCells(meta, cells)
 end
 
 -- 1. Moves a window all the way right
 -- 2. Resizes it to take up the right half of the screen (grid)
 module.rightHalf = function ()
   local meta = windowMeta()
-  local cell = hs.geometry(0.5 * meta.screenGrid.w, 0, 0.5 * meta.screenGrid.w, meta.screenGrid.h)
 
-  hs.grid.set(meta.window, cell, meta.screen)
+  local cells = {
+    hs.geometry(6, 0, 6, 12),
+    hs.geometry(8, 0, 4, 12),
+    hs.geometry(4, 0, 8, 12),
+  }
+
+  module.rotateBetweenCells(meta, cells)
 end
 
 -- 1. Moves a window all the way to the top
 -- 2. Resizes it to take up the top half of the screen (grid)
 module.topHalf = function ()
   local meta = windowMeta()
-  local cell = hs.geometry(0, 0, meta.screenGrid.w, 0.5 * meta.screenGrid.h)
 
-  hs.grid.set(meta.window, cell, meta.screen)
+  local cells = {
+    hs.geometry(0, 0, 12, 6),
+    hs.geometry(0, 0, 12, 4),
+    hs.geometry(0, 0, 12, 8),
+  }
+
+  module.rotateBetweenCells(meta, cells)
 end
 
 -- 1. Moves a window all the way to the bottom
 -- 2. Resizes it to take up the bottom half of the screen (grid)
 module.bottomHalf = function ()
   local meta = windowMeta()
-  local cell = hs.geometry(0, 0.5 * meta.screenGrid.h, meta.screenGrid.w, 0.5 * meta.screenGrid.h)
 
-  hs.grid.set(meta.window, cell, meta.screen)
+  local cells = {
+    hs.geometry(0, 6, 12, 6),
+    hs.geometry(0, 8, 12, 4),
+    hs.geometry(0, 4, 12, 8),
+  }
+
+  module.rotateBetweenCells(meta, cells)
 end
 
 -- 1. Moves a window all the way to the bottom
 -- 2. Resizes it to take up the bottom half of the screen (grid)
 module.topRightCorner = function ()
   local meta = windowMeta()
-  local cell = hs.geometry(0.5 * meta.screenGrid.w, 0, 0.5 * meta.screenGrid.w, 0.5 * meta.screenGrid.h)
 
-  hs.grid.set(meta.window, cell, meta.screen)
+  local cells = {
+    hs.geometry(6, 0, 6, 6),
+    hs.geometry(8, 0, 4, 6),
+    hs.geometry(4, 0, 8, 6),
+  }
+
+  module.rotateBetweenCells(meta, cells)
 end
 
 -- 1. Moves a window all the way to the bottom
 -- 2. Resizes it to take up the bottom half of the screen (grid)
 module.bottomLeftCorner = function ()
   local meta = windowMeta()
-  local cell = hs.geometry(0, 0.5 * meta.screenGrid.h, 0.5 * meta.screenGrid.w, 0.5 * meta.screenGrid.h)
 
-  hs.grid.set(meta.window, cell, meta.screen)
+  local cells = {
+    hs.geometry(0, 6, 6, 6),
+    hs.geometry(0, 6, 4, 6),
+    hs.geometry(0, 6, 8, 6),
+  }
+
+  module.rotateBetweenCells(meta, cells)
 end
 
 -- 1. Moves a window all the way to the bottom
 -- 2. Resizes it to take up the bottom half of the screen (grid)
 module.bottomRightCorner = function ()
   local meta = windowMeta()
-  local cell = hs.geometry(0.5 * meta.screenGrid.w, 0.5 * meta.screenGrid.h, 0.5 * meta.screenGrid.w, 0.5 * meta.screenGrid.h)
 
-  hs.grid.set(meta.window, cell, meta.screen)
+  local cells = {
+    hs.geometry(6, 6, 6, 6),
+    hs.geometry(8, 6, 4, 6),
+    hs.geometry(4, 6, 8, 6),
+  }
+
+  module.rotateBetweenCells(meta, cells)
 end
 
 -- 1. Moves a window all the way to the bottom
 -- 2. Resizes it to take up the bottom half of the screen (grid)
 module.topLeftCorner = function ()
   local meta = windowMeta()
-  local cell = hs.geometry(0, 0, 0.5 * meta.screenGrid.w, 0.5 * meta.screenGrid.h)
 
-  hs.grid.set(meta.window, cell, meta.screen)
+  local cells = {
+    hs.geometry(0, 0, 6, 6),
+    hs.geometry(0, 0, 4, 6),
+    hs.geometry(0, 0, 8, 6),
+  }
+
+  module.rotateBetweenCells(meta, cells)
+end
+
+module.streamLocation = function ()
+  local meta = windowMeta()
+  local cell = hs.geometry(0, 0, 1280, 720)
+  meta.window:setFrameInScreenBounds(cell)
 end
 
 -- Shrinks a window's size horizontally to the left.

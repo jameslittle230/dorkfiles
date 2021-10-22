@@ -14,6 +14,7 @@ superKey
   :bind('e'):toFunction('Send window top right', wm.topRightCorner)
   :bind('z'):toFunction('Send window bottom left', wm.bottomLeftCorner)
   :bind('c'):toFunction('Send window bottom right', wm.bottomRightCorner)
+  :bind('k'):toFunction('Send window to 1080p', wm.streamLocation)
   -- :bind('n'):toFunction('Shrink left', wm.shrinkLeft)
   -- :bind('m'):toFunction('Grow down', wm.growDown)
   -- :bind(','):toFunction('Shrink up', wm.shrinkUp)
