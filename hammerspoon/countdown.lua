@@ -19,6 +19,10 @@ updateMenu = function()
     daysfrom = os.difftime(os.time(item.timestamp), os.time()) / (24 * 60 * 60) -- seconds in a day
     wholedays = math.floor(daysfrom)
 
+    if(wholedays < 0) then
+      return nil
+    end
+
     return {
       title = item.title .. " - " .. wholedays .. "d",
       disabled = false

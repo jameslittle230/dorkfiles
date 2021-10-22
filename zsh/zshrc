@@ -1,7 +1,5 @@
 source $HOME/.zsh/vendor/antigen.zsh
 
-antigen bundle mafredri/zsh-async # pure prereq
-antigen bundle chabou/pure-now
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle dbalatero/fzf-git
@@ -18,6 +16,7 @@ setopt share_history
 
 for file in $HOME/.zsh/custom/**/*.zsh
 do
+  echo $file
   source $file
 done
 
@@ -28,3 +27,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+fpath+=$HOME/.zsh/vendor/pure
+autoload -U promptinit; promptinit
+prompt pure

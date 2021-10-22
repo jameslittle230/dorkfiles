@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
-# _symlinks_current_dir="${BASH_SOURCE%/*}"
-
-# function dotfiles_location() {
-#   echo $(cd $_symlinks_current_dir/../.. && pwd)
-# }
+_symlinks_current_dir="${BASH_SOURCE%/*}"
 
 function dotfiles_location() {
-  echo "$HOME/.dorkfiles"
+  echo $(cd $_symlinks_current_dir/../.. && pwd)
 }
 
 function symlink_dotfile() {

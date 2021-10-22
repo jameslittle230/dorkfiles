@@ -47,6 +47,11 @@ function install_fzf() {
   fi
 }
 
+function install_pure() {
+  local puredirectory="$(dotfiles_location)/zsh/vendor"
+  git clone https://github.com/sindresorhus/pure.git "$puredirectory/pure"
+}
+
 function install_antigen() {
   local plugin_file=$HOME/.zsh/vendor/antigen.zsh
 
@@ -60,6 +65,8 @@ dotheader "Setting up ZSH..."
 
 brew_install exa
 brew_install neofetch
+
+install_pure
 
 install_package zsh
 install_package zsh-completions
