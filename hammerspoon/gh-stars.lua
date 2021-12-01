@@ -9,8 +9,6 @@ update = function()
     function(status, body, headers)
       stargazers_count = hs.json.decode(body)['stargazers']
       has_notif = hs.json.decode('has_notif')
-      p(stargazers_count)
-      p(has_notif)
       GithubStars.menu:setTitle("★ " .. stargazers_count .. (has_notif and ' ♬' or ''))
       addMenu(GithubStars.menu)
     end

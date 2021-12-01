@@ -16,8 +16,9 @@ hyperKey:bind('h'):toFunction('Reload Hammerspoon', function()
   hs.reload()
 end)
 
-require "countdown"
 require "gh-stars"
 require "window-management"
 require "window-hotkeys"
 require "ocr-paste"
+require "md2jira"
+require "typing-speed"

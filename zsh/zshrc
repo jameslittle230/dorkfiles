@@ -16,7 +16,6 @@ setopt share_history
 
 for file in $HOME/.zsh/custom/**/*.zsh
 do
-  echo $file
   source $file
 done
 
