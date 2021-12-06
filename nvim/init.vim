@@ -162,10 +162,6 @@ nnoremap ; :
 " background out of insert mode
 inoremap <C-Z> <Esc><C-Z>
 
-" Use sane regexes.
-nnoremap / /\v
-vnoremap / /\v
-
 " ================ Plugins ==========================
 
 call plug#begin('~/.local/nvim/plugins')
