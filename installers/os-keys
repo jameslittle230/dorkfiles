@@ -29,7 +29,9 @@ function install_spoon() {
 function install_hyperkey() {
   local spoons_dir=$HOME/.hammerspoon/Spoons
   mkdir -p "$spoons_dir"
-  git clone https://github.com/dbalatero/HyperKey.spoon.git ~/.hammerspoon/Spoons/HyperKey.spoon
+  if [ ! -d "$spoons_dir/HyperKey.spoon" ]; then
+    git clone https://github.com/dbalatero/HyperKey.spoon.git ~/.hammerspoon/Spoons/HyperKey.spoon
+  fi
 }
 
 brew_install lua

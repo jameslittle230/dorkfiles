@@ -18,16 +18,17 @@
     amend = commit --amend
     b = branch -v
     c = commit -m
-    ca = commit -am
+    ca = commit -a
+    cam = commit -am
     co = checkout
-    nb = checkout -b
+    cob = checkout -b
     rc = rebase --continue
     rs = rebase --skip
     r = remote -v
     s = status
     stack = commit --allow-empty -m "##### STACKPOINT #####"
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
-    lines = log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short -n 20
+    lines = "!f() { git log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short -n ${1:-"20"}; }; f"
     alllines = log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short
 
 [mergetool]
@@ -37,15 +38,26 @@
 [merge]
     summary = true
     verbosity = 1
-    tool = vim -d
+    tool = Kaleidoscope
 
 [apply]
     whitespace = nowarn
 
 [diff]
     mnemonicprefix = true
-	algorithm = patience
+    algorithm = patience
     compactionHeuristic = true
+    tool = Kaleidoscope
+
+[difftool "Kaleidoscope"]
+cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+    prompt = false
+
+[mergetool "Kaleidoscope"]
+cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+trustExitCode = true
 
 [rerere]
     enabled = true
@@ -57,7 +69,7 @@
     statusHints = false
 
 [interactive]
-  singlekey = true
+    singlekey = true
 
 [include]
     path = .gitconfig.user
