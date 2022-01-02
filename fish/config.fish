@@ -1,5 +1,5 @@
-source (rbenv init -|psub)
-source ~/stripe/space-commander/bin/sc-env-activate.fish
+fish_add_path /opt/homebrew/bin/
+
 functions -e fish_right_prompt
 zoxide init fish | source
 starship init fish | source
@@ -20,3 +20,7 @@ abbr -a gcob git checkout -b
 abbr -a gp git pull
 abbr -a gpush git push
 abbr -a gs git status
+
+if test -e config.local.fish
+    source config.local.fish
+end
