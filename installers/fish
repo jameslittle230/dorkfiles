@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+
+source "${BASH_SOURCE%/*}/shared.sh"
+
+require_installer package-manager
+
+function setup_fish_symlinks() {
+  symlink_dotfile fish/config.fish ~/.config/fish/config.fish
+  # symlink_dotfile zsh/custom ~/.zsh/custom
+  # symlink_dotfile zsh/vendor ~/.zsh/vendor
+}
+
+function fish_binary() {
+  if is_linux; then
+    echo /bin/fish
+  elif is_macos_x86; then
+    echo /usr/local/bin/fish
+  elif is_macos_arm; then
+    echo /opt/homebrew/bin/fish
+  fi
+}
+
+function update_shell_whitelist() {
+  fishbin=$(fish_binary)
+  if ! grep -q "$fishbin" < /etc/shells ; then
+    echo "Adding $fishbin to /etc/shells, please enter your sudo password"
+
+    echo "$fishbin" | sudo tee -a /etc/shells > /dev/null
+  fi
+}
+
+function chsh_fish() {
+  if [[ "$SHELL" != "$(fish_binary)" ]]; then
+    local current_user=$USER
+    fish_bin="$(fish_binary)"
+    dotsay "@b@blue[[Changing shell for $current_user to $fish_bin]]"
+    # set -x
+    sudo chsh -s "$fish_bin" "$current_user"
+    # unset -x
+  fi
+}
+
+function install_fzf() {
+  brew_install fzf
+
+  if [ ! -f $HOME/.fzf.zsh ]; then
+    $(brew --prefix)/opt/fzf/install --no-update-rc --key-bindings --completion
+  fi
+}
+
+dotheader "Setting up Fish..."
+
+brew_install exa
+brew_install neofetch
+brew_install zoxide
+brew_install starship
+
+install_package fish
+install_fzf
+
+setup_fish_symlinks
+
+update_shell_whitelist
+chsh_fish
