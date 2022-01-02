@@ -6,8 +6,6 @@ require_installer package-manager
 
 function setup_fish_symlinks() {
   symlink_dotfile fish/config.fish ~/.config/fish/config.fish
-  # symlink_dotfile zsh/custom ~/.zsh/custom
-  # symlink_dotfile zsh/vendor ~/.zsh/vendor
 }
 
 function fish_binary() {
