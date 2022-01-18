@@ -9,17 +9,23 @@ function mkg
 end
 
 function gco
-    git checkout (git branch --all | fzf | tr -d '[:space:]')
+    if test -n $argv[1]
+        git checkout (git branch --all | fzf | tr -d '[:space:]')
+    else
+        git checkout $argv
+    end
 end
 
 abbr -a vim nvim
 abbr -a ls exa -hl --git
 abbr -a cd z
+abbr -a c code --new-window .
 
 abbr -a gcob git checkout -b
 abbr -a gp git pull
 abbr -a gpush git push
 abbr -a gs git status
+abbr -a gict gh issue create -t
 
 if test -e config.local.fish
     source config.local.fish
