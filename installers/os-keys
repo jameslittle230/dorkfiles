@@ -5,7 +5,7 @@ source "${BASH_SOURCE%/*}/shared.sh"
 require_installer package-manager
 
 dotheader "Setting up Hammerspoon..."
-brew_cask_install hammerspoon --appdir=/Applications
+# brew_cask_install hammerspoon --appdir=/Applications
 
 
 function install_spoon() {
@@ -40,7 +40,7 @@ brew_install luarocks
 # bluetooth
 brew_install blueutil
 
-brew_cask_install karabiner-elements
+# brew_cask_install karabiner-elements
 symlink_dotfile karabiner ~/.config/karabiner
 
 luarocks install loop
