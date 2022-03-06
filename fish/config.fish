@@ -1,5 +1,7 @@
 fish_add_path /opt/homebrew/bin/
 
+set -gx editor nvim
+
 functions -e fish_right_prompt
 zoxide init fish | source
 starship init fish | source
