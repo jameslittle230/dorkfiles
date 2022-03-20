@@ -7,9 +7,12 @@ update = function()
     "https://api.jameslittle.me/github/stork-stars",
     nil,
     function(status, body, headers)
+      p(status)
+      p(body)
+      p(headers)
       stargazers_count = hs.json.decode(body)['stargazers']
-      has_notif = hs.json.decode(body)['has_notif']
-      GithubStars.menu:setTitle("★ " .. stargazers_count .. (has_notif and ' ♬' or ''))
+      has_notif = hs.json.decode(body)['has_notifs']
+      GithubStars.menu:setTitle("★ " .. stargazers_count .. (has_notif and ' 🔔' or ''))
       addMenu(GithubStars.menu)
     end
   )
@@ -32,9 +35,10 @@ addMenu = function(menu)
       title = "Open Github Notifications",
       fn = function() hs.execute("open https://github.com/notifications") end
     },
-
+    
     {
-      title = "Last updated " .. os.date("%c")
+      title = "Last updated " .. os.date("%c"),
+      fn = update
     }
   })
 end

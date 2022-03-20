@@ -1,6 +1,7 @@
 fish_add_path /opt/homebrew/bin/
+fish_add_path ~/.cargo/bin
 
-set -gx editor nvim
+set -gx EDITOR nvim
 
 functions -e fish_right_prompt
 zoxide init fish | source
