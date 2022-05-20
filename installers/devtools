@@ -19,5 +19,5 @@ install_package wget
 
 brew_install ack
 
-brew_install hub
 brew_install gh
+brew_install difft
