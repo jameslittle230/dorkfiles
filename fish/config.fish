@@ -31,6 +31,10 @@ abbr -a gs git status
 abbr -a gict gh issue create -t
 abbr -a gwip git commit -am \"WIP\"
 
+abbr -a serve python3 -m http.server
+
+nvm use --lts
+
 if test -e config.local.fish
     source config.local.fish
 end
