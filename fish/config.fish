@@ -29,6 +29,7 @@ abbr -a gp git pull
 abbr -a gpush git push
 abbr -a gs git status
 abbr -a gict gh issue create -t
+abbr -a gwip git commit -am \"WIP\"
 
 if test -e config.local.fish
     source config.local.fish

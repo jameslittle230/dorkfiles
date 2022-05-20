@@ -16,7 +16,24 @@ hyperKey:bind('h'):toFunction('Reload Hammerspoon', function()
   hs.reload()
 end)
 
+superKey:bind('j'):toFunction('iTerm 2', function()
+  hs.application.launchOrFocus("iTerm")
+end)
+
+superKey:bind('k'):toFunction('VSCode', function()
+  hs.application.launchOrFocus("Visual Studio Code")
+end)
+
+superKey:bind('l'):toFunction('Xcode', function()
+  hs.application.launchOrFocus("xcode-13-3")
+end)
+
+superKey:bind('h'):toFunction('Chrome', function()
+  hs.application.launchOrFocus("Google Chrome")
+end)
+
 require "gh-stars"
+require "countdown"
 require "window-management"
 require "window-hotkeys"
 require "ocr-paste"

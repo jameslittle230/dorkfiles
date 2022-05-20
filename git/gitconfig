@@ -22,14 +22,16 @@
     cam = commit -am
     co = checkout
     cob = checkout -b
+    cp = cherry-pick
     rc = rebase --continue
     rs = rebase --skip
     r = remote -v
     s = status
-    stack = commit --allow-empty -m "##### STACKPOINT #####"
+    stack = "commit --allow-empty -m \"##### STACKPOINT #####\""
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
     lines = "!f() { git log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short -n ${1:-"20"}; }; f"
     alllines = log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short
+    hash = rev-parse --short HEAD
 
 [mergetool]
     prompt = false

@@ -1,17 +1,33 @@
 Countdown = {}
 
 Countdown.menu = hs.menubar.new()
-Countdown.menu:setTitle("Countdown Timer")
+Countdown.menu:setTitle("↓")
 
 Countdown.items = {
   {
-    title = "End of Q3",
-    timestamp = {year=2021, month=10, day=1}
+    title = "Dopro",
+    timestamp = {year=2022, month=6, day=13}
   },
   {
-    title = "New Year",
-    timestamp = {year=2022, month=1, day=1}
-  }
+    title = "H2",
+    timestamp = {year=2022, month=7, day=1}
+  },
+  {
+    title = "M30",
+    timestamp = {year=2022, month=8, day=29}
+  },
+  {
+    title = "Q3",
+    timestamp = {year=2022, month=10, day=1}
+  },
+  {
+    title = "J26",
+    timestamp = {year=2022, month=11, day=23}
+  },
+  {
+    title = "4Y",
+    timestamp = {year=2023, month=08, day=05}
+  },
 }
 
 updateMenu = function()

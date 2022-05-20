@@ -14,7 +14,8 @@ superKey
   :bind('e'):toFunction('Send window top right', wm.topRightCorner)
   :bind('z'):toFunction('Send window bottom left', wm.bottomLeftCorner)
   :bind('c'):toFunction('Send window bottom right', wm.bottomRightCorner)
-  :bind('k'):toFunction('Send window to 1080p', wm.streamLocation)
+  :bind('m'):toFunction('Send window to 1080p', wm.streamLocation)
+  :bind('v'):toFunction('Throw to next screen', wm.throw)
   -- :bind('n'):toFunction('Shrink left', wm.shrinkLeft)
   -- :bind('m'):toFunction('Grow down', wm.growDown)
   -- :bind(','):toFunction('Shrink up', wm.shrinkUp)
@@ -23,7 +24,6 @@ superKey
   -- :bind('u'):toFunction('Nudge down', wm.nudgeDown)
   -- :bind('i'):toFunction('Nudge up', wm.nudgeUp)
   -- :bind('o'):toFunction('Nudge right', wm.nudgeRight)
-  :bind('v'):toFunction('Throw to next screen', wm.throw)
 
 -- Pops the visible Chrome tab into a new browser window next to the current one
 local function popoutChromeTabSideBySide()
