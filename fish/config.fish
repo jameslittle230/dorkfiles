@@ -12,10 +12,10 @@ function mkg
 end
 
 function gco
-    if test -n $argv[1]
-        git checkout (git branch --all | fzf | tr -d '[:space:]')
-    else
+    if count $argv > /dev/null
         git checkout $argv
+    else
+        git checkout (git branch | fzf | tr -d '[:space:]')
     end
 end
 
