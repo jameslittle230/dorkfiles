@@ -66,19 +66,27 @@ end
 -- Centers a window in the middle of the screen.
 module.centerOnScreen = function ()
   local meta = windowMeta()
-  meta.window:centerOnScreen(meta.screen)
+  meta.window:centerOnScreen(meta.screen, true)
 end
 
 module.focusWindow = function ()
   local meta = windowMeta()
   local cell = hs.geometry(0.05 * meta.screenGrid.w, 0.05 * meta.screenGrid.h, 0.9 * meta.screenGrid.w, 0.9 * meta.screenGrid.h)
   hs.grid.set(meta.window, cell, meta.screen)
+  meta.window:centerOnScreen(meta.screen, true)
+end
+
+module.focusWindowVertical = function ()
+  local meta = windowMeta()
+  local cell = hs.geometry(0.2 * meta.screenGrid.w, 0.05 * meta.screenGrid.h, 0.6 * meta.screenGrid.w, 0.9 * meta.screenGrid.h)
+  hs.grid.set(meta.window, cell, meta.screen)
+  meta.window:centerOnScreen(meta.screen, true)
 end
 
 -- Throws a window 1 screen to the left
 module.throw = function ()
   local meta = windowMeta()
-  meta.window:centerOnScreen(meta.screen:next())
+  meta.window:centerOnScreen(meta.screen:next(), true)
 end
 
 -- 1. Moves a window all the way left

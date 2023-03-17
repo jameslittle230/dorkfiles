@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>cargo</name>
-  <version>1.0.0</version>
-  <bundle>com.github.mkamakura.cargo</bundle>
-  <updated>1468485735</updated>
-  <file>cargo.alfredworkflow</file>
-</workflow>

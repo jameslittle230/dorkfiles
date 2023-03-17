@@ -7,9 +7,7 @@ update = function()
     "https://api.jameslittle.me/github/stork-stars",
     nil,
     function(status, body, headers)
-      p(status)
       p(body)
-      p(headers)
       stargazers_count = hs.json.decode(body)['stargazers']
       has_notif = hs.json.decode(body)['has_notifs']
       GithubStars.menu:setTitle("★ " .. stargazers_count .. (has_notif and ' 🔔' or ''))
@@ -44,6 +42,6 @@ addMenu = function(menu)
 end
 
 update()
-GithubStars.timer = hs.timer.doEvery(hs.timer.hours(4), function()
+GithubStars.timer = hs.timer.doEvery(hs.timer.minutes(10), function()
   update()
 end)

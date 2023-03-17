@@ -64,7 +64,7 @@ filetype indent on
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
-set nowrap       " Don't wrap lines
+set wrap
 set linebreak    " Wrap lines at convenient points
 
 " =============== Status Line =====================
