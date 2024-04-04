@@ -30,6 +30,17 @@ abbr -a ls eza -1lTo --level=3 --group-directories-first --no-permissions --git
 abbr -a c code --new-window .
 abbr -a vim nvim
 abbr -a g git
+abbr -a ga git add
+abbr -a gc git commit
+abbr -a gcam git commit -am
+abbr -a gcm git commit -m
+abbr -a gs git status
+abbr -a gd git diff
+abbr -a gl git lines
+abbr -a gp git push
+abbr -a gpf git push --force
+abbr -a gmaster git fm
+abbr -a gmain git fmn
 abbr -a gcob git checkout -b
 abbr -a !! --position anywhere --function last_history_item
 
