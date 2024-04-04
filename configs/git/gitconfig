@@ -1,0 +1,73 @@
+[core]
+    editor = nvim
+    preloadindex = true
+    excludesfile = ~/.gitignore
+
+[commit]
+    template = ~/.git-commit-template
+
+[pull]
+    ff = only
+    rebase = true
+
+[push]
+    default = current
+
+[alias]
+    
+    a = add
+    aa = add .
+    am = commit --amend
+    b = branch -v
+    bd = branch -D
+    c = commit -m
+    ca = commit -a
+    cam = commit -am
+    co = checkout
+    cob = checkout -b
+    cp = cherry-pick
+    fm = fetch origin master:master
+    fmn = fetch origin main:main
+    rbm = rebase master
+    rc = rebase --continue
+    rs = rebase --skip
+    r = remote -v
+    s = status
+    stack = "commit --allow-empty -m \"##### STACKPOINT #####\""
+    wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+    lines = "!f() { git log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short -n ${1:-"20"}; }; f"
+    linesall = log --format=\"%C(auto)%h%d %C(100)%ad%Creset %s\" --date=short
+    hash = rev-parse --short HEAD
+
+[mergetool]
+    prompt = false
+    keepBackup = true
+
+[merge]
+    summary = true
+    verbosity = 1
+    tool = 
+
+[apply]
+    whitespace = nowarn
+
+[diff]
+    mnemonicprefix = true
+    algorithm = patience
+    compactionHeuristic = true
+    external = difft
+
+[rerere]
+    enabled = true
+
+[help]
+    autocorrect = 1
+
+[advice]
+    statusHints = false
+
+[interactive]
+    singlekey = true
+
+[include]
+    path = .gitconfig.user
